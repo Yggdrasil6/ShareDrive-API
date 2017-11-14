@@ -1,0 +1,9 @@
+server:
+  port: 8090
+  session:
+    timeout: -1
+spring:
+  session:
+    store-type: redis
+  redis:
+    database: 0
