@@ -31,5 +31,6 @@ public class CustomerAuthenticationProvider implements AuthenticationProvider {
 
     public void assertUserNameWithPassword(String userName, String userPassword) {
         /*校验密码操作*/
+
     }
 }
