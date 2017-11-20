@@ -1,9 +1,19 @@
 server:
   port: 8090
   session:
-    timeout: -1
+    timeout : -1
 spring:
   session:
     store-type: redis
   redis:
     database: 0
+  datasource:
+    password: 111111
+    url: jdbc:mysql://localhost/sharedrive?useUnicode=true&characterEncoding=UTF-8
+    username: root
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+security:
+  basic:
+    enabled: false

@@ -22,7 +22,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                .antMatchers("/login", "/captchas", "/home").permitAll()
+                .antMatchers("/api/login", "/api/captchas", "/api/home").permitAll()
                 .anyRequest().authenticated().and()
                 .requestCache().requestCache(new NullRequestCache()).and()
                 .csrf().disable()

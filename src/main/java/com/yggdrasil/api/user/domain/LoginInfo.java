@@ -1,4 +1,4 @@
-package com.yggdrasil.user.domain;
+package com.yggdrasil.api.user.domain;
 
 public class LoginInfo {
     @Override
